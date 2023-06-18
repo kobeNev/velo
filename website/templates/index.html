@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Velo Antwerpen</title>
+  <style>
+    body {
+      background-color: #000;
+      color: #0F0;
+      font-family: "Courier New", monospace;
+      margin: 0;
+      padding: 0;
+    }
+
+    .navbar {
+      background-color: #000;
+      overflow: hidden;
+    }
+
+    .navbar a {
+      float: left;
+      display: block;
+      color: #0F0;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 18px;
+    }
+
+    .navbar a:hover {
+      background-color: #090909;
+    }
+
+    .logo {
+      float: right;
+      padding: 10px;
+    }
+
+    .hero {
+      background-color: #000;
+      height: 400px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 48px;
+      margin-bottom: 20px;
+      color: #0F0;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 20px auto;
+      background-color: #090909;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    }
+
+    .container h2 {
+      color: #0F0;
+    }
+
+    .container p {
+      color: #0F0;
+    }
+
+    .grid-item {
+      background-color: #000;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+      color: #0F0;
+    }
+
+    .container p.contact-info {
+      font-size: 18px;
+    }
+  </style>
+</head>
+<body>
+  <div class="navbar">
+    <a href="#">Home</a>
+    <a href="#">Fiets verhuur</a>
+    <a href="#">Over</a>
+    <a href="#">Contact</a>
+    <img class="logo" src="logo.png" alt="Logo">
+  </div>
+
+  <div class="hero">
+    <h1>Welkom bij velo Antwerp</h1>
+    <p>Huur een fiets en ontdek het mooie Antwerpen.</p>
+  </div>
+
+  <div class="container">
+    <h2>Fiets verhuur</h2>
+    <p>Kies tussen onze verschillende plannen:</p>
+    <div class="grid">
+      <div class="grid-item">
+        <h3>Huren voor een dag</h3>
+        <p>Dit kost standaard €10 per dag.</p>
+      </div>
+      <div class="grid-item">
+        <h3>Huren voor een jaar</h3>
+        <p>Ons jaarlijks plan kost maar €55 per jaar.</p>
+      </div>
+      <div class="grid-item">
+        <h3>per extra halfuur boven op het standaard halfuur</h3>
+        <p>Hiervoor vragen wij een prijs van €5 per half uur.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <h2>Prijs</h2>
+    <p>Dit zijn de fietsverhuur prijzen:</p>
+    <ul>
+      <li>€10 per dag</li>
+      <li>€55 per jaar</li>
+      <li>€5 per extra half uur</li>
+    </ul>
+  </div>
+
+  <div class="container">
+    <h2>Contacteer ons</h2>
+    <p class="contact-info">Telefoon: 123-456-7890</p>
+    <p class="contact-info">Email: info@antwerpbikerentals.com</p>
+  </div>
+</body>
+</html>

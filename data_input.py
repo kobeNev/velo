@@ -19,12 +19,12 @@ def toevoegen_fiets(self,id, status, slot,user_id):
 
 def toevoegen_station(self, naam, locatie, aantalPlaatsen):
     new=Station(id, naam, locatie, aantalPlaatsen)
-    self.velo[len(self.velo)+1]=new
+    self.stations[len(self.stations)+1]=new
     return new
 
 def toevoegen_station(self,naam, camion, fietsen):
     new=Transporteur(naam, camion, fietsen)
-    self.transporteurs[len(self.transporteurs)+1]=new
+    self.transporters[len(self.transporters)+1]=new
     return new
 
 def uitlezen_station(self):
@@ -33,4 +33,4 @@ def uitlezen_station(self):
     for station_new in velo_data["features"]:
         new= self.toevoegen_station(name=station_new["properties"]["Straatnaam"],
                                     location=station_new["properties"]["Postcode"],
-                                    capacity=station_new["properties"]["Aantal_plaatsen"])
+                                capacity=station_new["properties"]["Aantal_plaatsen"])
